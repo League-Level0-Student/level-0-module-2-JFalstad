@@ -15,11 +15,17 @@ import javax.swing.JOptionPane;
 public class AnimalFarm {
 	
 	public static void main(String[] args) {
-			
+		boolean wannaExit = false;	
 		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
-			
+		while (!wannaExit) {
+		String exitCommand = JOptionPane.showInputDialog(null, "What animal do you want? Exit is the command to exit.");
+		if (exitCommand.equalsIgnoreCase("Exit")) {
+			wannaExit = true; 
+		}
+		}
+		
 		/* 2. Make it so that the user can keep entering new animals. */
-
+		
 	}
 
 	static void playMoo() {

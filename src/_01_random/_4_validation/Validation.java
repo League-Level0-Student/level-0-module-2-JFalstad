@@ -11,13 +11,26 @@ public class Validation {
 	public static void main(String[] args) {
 		
 		Random randomMaker = new Random();
-		
+		for (int i = 0; i < 10; i++) {
+			
 		int randomNumber = randomMaker.nextInt(5);
 		
 		System.out.println(randomNumber);
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
-
+		if (randomNumber == 0) {
+			JOptionPane.showMessageDialog(null, "You are intelligent."); 
+		} else if (randomNumber == 1) {
+			JOptionPane.showMessageDialog(null, "You make me smile.");
+		} else if (randomNumber == 2) {
+			JOptionPane.showMessageDialog(null, "You are such a kind person!");
+		} else if (randomNumber == 3) {
+			JOptionPane.showMessageDialog(null, "You smell nice.");
+		} else if (randomNumber == 4) {
+			JOptionPane.showMessageDialog(null, "You are brave!");
+		}
+		}
+			
 		// 2. Repeat all the code above 10 times
 		
 		// 3. Find someone to test out your program. They will like it :)
