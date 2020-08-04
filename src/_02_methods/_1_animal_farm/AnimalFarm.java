@@ -20,32 +20,45 @@ public class AnimalFarm {
 		while (!wannaExit) {
 		String exitCommand = JOptionPane.showInputDialog(null, "What animal do you want? Exit is the command to exit.");
 		if (exitCommand.equalsIgnoreCase("Exit")) {
-			wannaExit = true; 
+			wannaExit = true;
+		}
+		if (exitCommand.equalsIgnoreCase("Cow")) {
+			playMoo();
+		}
+		if (exitCommand.equalsIgnoreCase("Duck")) {
+			playQuack();
+		}
+		if (exitCommand.equalsIgnoreCase("Dog")) {
+			playWoof();
+		}
+		if (exitCommand.equalsIgnoreCase("Llama")) {
+			playLlama();
 		}
 		}
+		
 		
 		/* 2. Make it so that the user can keep entering new animals. */
 		
 	}
 
 	static void playMoo() {
-		playNoise(mooFile);
+		JOptionPane.showMessageDialog(null, "playMoo.");
 	}
 
 	static void playQuack() {
-		playNoise(quackFile);
+		JOptionPane.showMessageDialog(null, "playQuack.");
 	}
 
 	static void playWoof() {
-		playNoise(woofFile);
+		JOptionPane.showMessageDialog(null, "playWoof.");
 	}
 	
 	static void playMeow() {
-		playNoise(meowFile);
+		JOptionPane.showMessageDialog(null, "playMeow.");
 	}
 	
 	static void playLlama() {
-		playNoise(llamaFile);
+		JOptionPane.showMessageDialog(null, "playLlama.");
 	}
 
 	static String quackFile = "quack.wav";
